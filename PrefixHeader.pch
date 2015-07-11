@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  P2P-SinaWeibo
+//
+//  Created by Mac on 14-11-16.
+//  Copyright (c) 2014年 MN. All rights reserved.
+//
+
+#ifndef P2P_SinaWeibo_PrefixHeader_pch
+#define P2P_SinaWeibo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+
+#ifdef __OBJC__
+#import<UIKit/UIKit.h>
+#import<Foundation/Foundation.h>
+
+// 1.判断是否为iOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+#define SWColor(r,g,b)  [UIColor colorWithRed:(r/255.0) green:(g/255.0) blue:(b/255.0) alpha:1.0];
+#endif
